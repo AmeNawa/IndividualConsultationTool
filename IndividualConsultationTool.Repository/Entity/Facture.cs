@@ -31,7 +31,7 @@ namespace IndividualConsultationTool.Repository.Entity
         /// <summary>
         /// Payment method, cash, card, etc.
         /// </summary>
-        public Enums.PaymentMethod PaymentMethod { get; set; }
+        public EPaymentMethod PaymentMethod { get; set; }
 
         //[ForeignKey("Consultation")]
         public int ConsultationId { get; set; }

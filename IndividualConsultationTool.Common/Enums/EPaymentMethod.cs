@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace IndividualConsultationTool.Common.Enums
 {
-    public partial class Enums
+    public enum EPaymentMethod
     {
-        public enum PaymentMethod
-        {
-            Cash = 1,
+        Cash = 1,
 
-            Card  = 2,
+        Card = 2,
 
-            Transfer = 3,
-        }
+        Transfer = 3,
     }
 }

@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace IndividualConsultationTool.Common.Enums
 {
-    public partial class Enums
+    public enum EConsultationType
     {
-        public enum ConsultationType
-        {
-            None = 0,
+        None = 0,
 
-            Dentist = 1,
-        }
+        Dentist = 1,
     }
 }

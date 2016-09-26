@@ -16,12 +16,12 @@ namespace IndividualConsultationTool.Repository.Entity
         /// <summary>
         /// Consultation type, dentist, cardiologist, etc.
         /// </summary>
-        public Enums.ConsultationType ConsultationType { get; set; }
+        public EConsultationType ConsultationType { get; set; }
 
         /// <summary>
         /// Payment status
         /// </summary>
-        public Enums.EPaymentStatus PaymentStatus { get; set; }
+        public EPaymentStatus PaymentStatus { get; set; }
 
         /// <summary>
         /// 

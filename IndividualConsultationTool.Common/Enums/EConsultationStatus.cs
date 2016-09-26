@@ -6,15 +6,12 @@ using System.Threading.Tasks;
 
 namespace IndividualConsultationTool.Common.Enums
 {
-    public partial class Enums
+    public enum EConsultationStatus
     {
-        public enum ConsultationStatus
-        {
-            Awaitaing = 1,
+        Awaitaing = 1,
 
-            Delayed = 2,
+        Delayed = 2,
 
-            Done = 3,
-        }
+        Done = 3,
     }
 }
