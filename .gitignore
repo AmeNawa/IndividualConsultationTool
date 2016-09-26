@@ -1,0 +1,7 @@
+packages/
+IndividualConsultationTool.Tests/obj/
+IndividualConsultationTool.Repository/obj/
+IndividualConsultationTool.Repository/bin/
+IndividualConsultationTool.Common/obj/
+IndividualConsultationTool.BIL/obj/
+IndividualConsultationTool.Presentation/obj/
