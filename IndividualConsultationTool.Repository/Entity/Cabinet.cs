@@ -8,26 +8,19 @@ using IndividualConsultationTool.Common.Enums;
 
 namespace IndividualConsultationTool.Repository.Entity
 {
-    public class Cabinet
+    public class Cabinet : IEntity
     {
         [Key]
         public int Id { get; set; }
 
-        /// <summary>
-        /// Foreign key for doctor
-        /// </summary>
+        // Foreign keys
         public int DoctorId { get; set; }
         public virtual Doctor Doctor { get; set; }
 
-        /// <summary>
-        /// Foreign key for adress
-        /// </summary>
         public int AdressId { get; set; }
         public virtual Adress Adress { get; set; }
 
-        //[ForeignKey("Consultations")]
         public int ConsultationsId { get; set; }
         public virtual ICollection<Consultation> Consultations { get; set; }
-
     }
 }

@@ -8,7 +8,7 @@ using IndividualConsultationTool.Common.Enums;
 
 namespace IndividualConsultationTool.Repository.Entity
 {
-    public class Consultation 
+    public class Consultation : IEntity
     {
         [Key]
         public int Id { get; set; }
@@ -43,19 +43,16 @@ namespace IndividualConsultationTool.Repository.Entity
         /// </summary>
         public float Price { get; set; }
 
-        //[ForeignKey("Cabinet")]
+        // Foreign keys
         public int CabinetId { get; set; }
         public virtual Cabinet Cabinet { get; set; }
 
-        //[ForeignKey("Facture")]
         public int FactureId { get; set; }
         public virtual Facture Facture { get; set; }
 
-        //[ForeignKey("ConsultationChain")]
         public int ChainId { get; set; }
         public virtual ConsultationChain ConsultationChain { get; set; }
 
-        //[ForeignKey("Patient")]
         public int PatientId { get; set; }
         public virtual Patient Patient { get; set; }
     }

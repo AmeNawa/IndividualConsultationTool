@@ -5,3 +5,7 @@ IndividualConsultationTool.Repository/bin/
 IndividualConsultationTool.Common/obj/
 IndividualConsultationTool.BIL/obj/
 IndividualConsultationTool.Presentation/obj/
+IndividualConsultationTool.BIL/bin/
+/bin/
+IndividualConsultationTool.Presentation/bin/
+IndividualConsultationTool.Tests/bin/

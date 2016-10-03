@@ -6,7 +6,7 @@ using System.Web;
 
 namespace IndividualConsultationTool.Repository.Entity
 {
-    public class Adress 
+    public class Adress : IEntity
     {
         [Key]
         public int Id { get; set; }
@@ -36,7 +36,7 @@ namespace IndividualConsultationTool.Repository.Entity
         /// </summary>
         public string Street { get; set; }
 
-        //
+        // Foreign key
         public int CabinetId { get; set; }
         public virtual Cabinet Cabinet { get; set; }
     }

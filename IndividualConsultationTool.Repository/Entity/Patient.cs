@@ -7,7 +7,7 @@ using System.Web;
 
 namespace IndividualConsultationTool.Repository.Entity
 {
-    public class Patient 
+    public class Patient : IEntity
     {
         [Key]
         public int Id { get; set; }
@@ -22,11 +22,10 @@ namespace IndividualConsultationTool.Repository.Entity
         /// </summary>
         public string Surname { get; set; }
 
-        //[ForeignKey("Contact")]
+        // Foreign keys
         public int ContactId { get; set; }
         public virtual Contact Contact {get; set; }
 
-       // [ForeignKey("Consultations")]
         public int ConsultationId { get; set; }
         public virtual ICollection<Consultation> Consultations { get; set; }
     }

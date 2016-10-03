@@ -7,17 +7,14 @@ using System.Web;
 
 namespace IndividualConsultationTool.Repository.Entity
 {
-    public class ConsultationChain 
+    public class ConsultationChain : IEntity
     {
         [Key]
         public int Id { get; set; }
 
-        /// <summary>
-        /// Description
-        /// </summary>
         public string Description { get; set; }
 
-        //[ForeignKey("Consultations")]
+        // Foreign key
         public int ConsultationId { get; set; }
         public virtual ICollection<Consultation> Consultations { get; set; }
     }

@@ -49,6 +49,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\AdressMapperTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IndividualConsultationTool.BIL\IndividualConsultationTool.BIL.csproj">
+      <Project>{9b55374a-d717-4db9-be05-6b98d9c00978}</Project>
+      <Name>IndividualConsultationTool.BIL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IndividualConsultationTool.Common\IndividualConsultationTool.Common.csproj">
+      <Project>{e9044f20-6487-43b6-97e8-51cd6ee4a497}</Project>
+      <Name>IndividualConsultationTool.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IndividualConsultationTool.Presentation\IndividualConsultationTool.Presentation.csproj">
+      <Project>{36584ae6-10c9-4019-b95e-7c793a179a64}</Project>
+      <Name>IndividualConsultationTool.Presentation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IndividualConsultationTool.Repository\IndividualConsultationTool.Repository.csproj">
+      <Project>{d2f362a4-c074-4bf9-b7c0-d3d71bf967fe}</Project>
+      <Name>IndividualConsultationTool.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

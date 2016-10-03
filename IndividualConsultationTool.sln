@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndividualConsultationTool.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndividualConsultationTool.BIL", "IndividualConsultationTool.BIL\IndividualConsultationTool.BIL.csproj", "{9B55374A-D717-4DB9-BE05-6B98D9C00978}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndividualConsultationTool.Presentation", "..\visual studio 2015\Projects\IndividualConsultationTool\IndividualConsultationTool.Presentation\IndividualConsultationTool.Presentation.csproj", "{B2E24DE1-EAEC-465E-8033-F3E0484037B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndividualConsultationTool.Presentation", "IndividualConsultationTool.Presentation\IndividualConsultationTool.Presentation.csproj", "{36584AE6-10C9-4019-B95E-7C793A179A64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{9B55374A-D717-4DB9-BE05-6B98D9C00978}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B55374A-D717-4DB9-BE05-6B98D9C00978}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B55374A-D717-4DB9-BE05-6B98D9C00978}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2E24DE1-EAEC-465E-8033-F3E0484037B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2E24DE1-EAEC-465E-8033-F3E0484037B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2E24DE1-EAEC-465E-8033-F3E0484037B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2E24DE1-EAEC-465E-8033-F3E0484037B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36584AE6-10C9-4019-B95E-7C793A179A64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36584AE6-10C9-4019-B95E-7C793A179A64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36584AE6-10C9-4019-B95E-7C793A179A64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36584AE6-10C9-4019-B95E-7C793A179A64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
