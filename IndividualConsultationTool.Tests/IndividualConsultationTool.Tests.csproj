@@ -50,6 +50,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\AdressMapperTests.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\CabinetMapperTests.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\ConsultationChainMapperTests.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\ConsultationMapperTests.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\ContactMapperTests.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\DoctorMapperTests.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\FactureMapperTests.cs" />
+    <Compile Include="RepositoryTests\MapperTests\AutoMapperTests\PatientMapperTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IndividualConsultationTool.BIL\IndividualConsultationTool.BIL.csproj">

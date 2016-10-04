@@ -77,7 +77,15 @@
     <Compile Include="Entity\IEntity.cs" />
     <Compile Include="Entity\Patient.cs" />
     <Compile Include="Mappers\AutoMapper\AdressMapper.cs" />
+    <Compile Include="Mappers\AutoMapper\CabinetMapper.cs" />
+    <Compile Include="Mappers\AutoMapper\ConsultationChainMapper.cs" />
+    <Compile Include="Mappers\AutoMapper\ConsultationMapper.cs" />
+    <Compile Include="Mappers\AutoMapper\ContactMapper.cs" />
+    <Compile Include="Mappers\AutoMapper\DoctorMapper.cs" />
+    <Compile Include="Mappers\AutoMapper\FactureMapper.cs" />
+    <Compile Include="Mappers\AutoMapper\PatientMapper.cs" />
     <Compile Include="Mappers\IMapper.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\AdressSecureService.cs" />
     <Compile Include="Migrations\201609261844552_FirstMigration.cs" />
     <Compile Include="Migrations\201609261844552_FirstMigration.Designer.cs">
       <DependentUpon>201609261844552_FirstMigration.cs</DependentUpon>
@@ -100,6 +108,7 @@
       <DependentUpon>201609261844552_FirstMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

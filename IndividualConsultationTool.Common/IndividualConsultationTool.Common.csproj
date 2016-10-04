@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Const\SecureConst.cs" />
     <Compile Include="Enums\EConsultationStatus.cs" />
     <Compile Include="Enums\EConsultationType.cs" />
     <Compile Include="Enums\EPaymentMethod.cs" />

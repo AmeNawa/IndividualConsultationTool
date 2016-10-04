@@ -9,10 +9,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace IndividualConsultationTool.Tests.RepositoryTests.MapperTests.AutoMapperTests
 {
     [TestClass]
-    public class AdressMapperTests
+    public class FactureMapperTests
     {
         [TestMethod]
-        public void PassWhenAdressMapToBOSucess()
+        public void PassWhenFactureMapToBOSucess()
         {
             // Arrange
             var target = getTarget();
@@ -29,7 +29,7 @@ namespace IndividualConsultationTool.Tests.RepositoryTests.MapperTests.AutoMappe
 
 
         [TestMethod]
-        public void PassWhenAdressMapToEntitySucess()
+        public void PassWhenFactureMapToEntitySucess()
         {
             // Arrange
             var target = getTarget();
@@ -45,21 +45,21 @@ namespace IndividualConsultationTool.Tests.RepositoryTests.MapperTests.AutoMappe
         }
 
 
-        private IMapper<Adress, Repository.Entity.Adress> getTarget()
+        private IMapper<Facture, Repository.Entity.Facture> getTarget()
         {
-            return new AdressMapper();
+            return new FactureMapper();
         }
 
 
-        private Repository.Entity.Adress getEntity()
+        private Repository.Entity.Facture getEntity()
         {
-            return new Repository.Entity.Adress();
+            return new Repository.Entity.Facture();
         }
 
 
-        private Adress getModel()
+        private Facture getModel()
         {
-            return  new Adress();
+            return new Facture();
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -9,31 +8,34 @@ using IndividualConsultationTool.Repository.BusinessObjects;
 
 namespace IndividualConsultationTool.Repository.Mappers.AutoMapper
 {
-    public class AdressMapper : IMapper<Adress, Entity.Adress>
+    public class DoctorMapper : IMapper<Doctor, Entity.Doctor>
     {
         /// <summary>
         /// Initialize mapper
         /// </summary>
-        public AdressMapper()
+        public DoctorMapper()
         {
             Mapper.Initialize(cfg =>
             {
-                cfg.CreateMap<Entity.Adress, Adress>();
+                cfg.CreateMap<Entity.Doctor, Doctor>();
+                cfg.CreateMap<Entity.Contact, Contact>();
                 cfg.CreateMap<Entity.Cabinet, Cabinet>();
 
-                cfg.CreateMap<Adress, Entity.Adress>();
+                cfg.CreateMap<Doctor, Entity.Doctor>();
+                cfg.CreateMap<Contact, Entity.Contact>();
                 cfg.CreateMap<Cabinet, Entity.Cabinet>();
             });
         }
+
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public Adress MapToBusinessObject(Entity.Adress entity)
+        public Doctor MapToBusinessObject(Entity.Doctor entity)
         {
-            return Mapper.Map<Adress>(entity);
+            return Mapper.Map<Doctor>(entity);
         }
 
 
@@ -42,9 +44,9 @@ namespace IndividualConsultationTool.Repository.Mappers.AutoMapper
         /// </summary>
         /// <param name="entities"></param>
         /// <returns></returns>
-        public IEnumerable<Adress> MapToBusinessObjects(IEnumerable<Entity.Adress> entities)
+        public IEnumerable<Doctor> MapToBusinessObjects(IEnumerable<Entity.Doctor> entities)
         {
-            return Mapper.Map<IEnumerable<Adress>>(entities);
+            return Mapper.Map<IEnumerable<Doctor>>(entities);
         }
 
 
@@ -53,9 +55,9 @@ namespace IndividualConsultationTool.Repository.Mappers.AutoMapper
         /// </summary>
         /// <param name="businessModel"></param>
         /// <returns></returns>
-        public Entity.Adress MapToEntity(Adress businessModel)
+        public Entity.Doctor MapToEntity(Doctor businessModel)
         {
-            return Mapper.Map<Entity.Adress>(businessModel);
+            return Mapper.Map<Entity.Doctor>(businessModel);
         }
     }
 }

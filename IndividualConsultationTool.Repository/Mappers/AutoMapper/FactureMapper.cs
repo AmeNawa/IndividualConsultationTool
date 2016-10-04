@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -9,31 +8,32 @@ using IndividualConsultationTool.Repository.BusinessObjects;
 
 namespace IndividualConsultationTool.Repository.Mappers.AutoMapper
 {
-    public class AdressMapper : IMapper<Adress, Entity.Adress>
+    public class FactureMapper : IMapper<Facture, Entity.Facture>
     {
         /// <summary>
         /// Initialize mapper
         /// </summary>
-        public AdressMapper()
+        public FactureMapper()
         {
             Mapper.Initialize(cfg =>
             {
-                cfg.CreateMap<Entity.Adress, Adress>();
-                cfg.CreateMap<Entity.Cabinet, Cabinet>();
+                cfg.CreateMap<Entity.Facture, Facture>();
+                cfg.CreateMap<Entity.Consultation, Consultation>();
 
-                cfg.CreateMap<Adress, Entity.Adress>();
-                cfg.CreateMap<Cabinet, Entity.Cabinet>();
+                cfg.CreateMap<Facture, Entity.Facture>();
+                cfg.CreateMap<Consultation, Entity.Consultation>();
             });
         }
+
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="entity"></param>
         /// <returns></returns>
-        public Adress MapToBusinessObject(Entity.Adress entity)
+        public Facture MapToBusinessObject(Entity.Facture entity)
         {
-            return Mapper.Map<Adress>(entity);
+            return Mapper.Map<Facture>(entity);
         }
 
 
@@ -42,9 +42,9 @@ namespace IndividualConsultationTool.Repository.Mappers.AutoMapper
         /// </summary>
         /// <param name="entities"></param>
         /// <returns></returns>
-        public IEnumerable<Adress> MapToBusinessObjects(IEnumerable<Entity.Adress> entities)
+        public IEnumerable<Facture> MapToBusinessObjects(IEnumerable<Entity.Facture> entities)
         {
-            return Mapper.Map<IEnumerable<Adress>>(entities);
+            return Mapper.Map<IEnumerable<Facture>>(entities);
         }
 
 
@@ -53,9 +53,9 @@ namespace IndividualConsultationTool.Repository.Mappers.AutoMapper
         /// </summary>
         /// <param name="businessModel"></param>
         /// <returns></returns>
-        public Entity.Adress MapToEntity(Adress businessModel)
+        public Entity.Facture MapToEntity(Facture businessModel)
         {
-            return Mapper.Map<Entity.Adress>(businessModel);
+            return Mapper.Map<Entity.Facture>(businessModel);
         }
     }
 }

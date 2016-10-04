@@ -1,6 +1,7 @@
 ﻿using IndividualConsultationTool.Common.Secure;
 using Ninject;
 using Ninject.Modules;
+using IndividualConsultationTool.Common.Const;
 
 namespace IndividualConsultationTool.Common.Infrastructure
 { 
@@ -13,12 +14,12 @@ namespace IndividualConsultationTool.Common.Infrastructure
 
         private readonly SecurityOptions securityOptions = new SecurityOptions
         {
-            Password = "pk4141ddsfs==",
+            Password = SecureConst.Password,
             HashAlghorithm = "SHA1",
-            Iterations = 5,
-            KeySize = 256,
-            Salt = "grp32lmi02",
-            Vector = "ple03eki3lekoqp1",
+            Iterations = SecureConst.Iterations,
+            KeySize = SecureConst.KeySize,
+            Salt = SecureConst.Salt,
+            Vector = SecureConst.Vector,
         };
     }
 }

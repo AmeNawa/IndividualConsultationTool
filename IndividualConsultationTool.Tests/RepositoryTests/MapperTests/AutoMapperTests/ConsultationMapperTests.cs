@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml;
 using IndividualConsultationTool.Repository.BusinessObjects;
 using IndividualConsultationTool.Repository.Mappers;
 using IndividualConsultationTool.Repository.Mappers.AutoMapper;
@@ -9,10 +12,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace IndividualConsultationTool.Tests.RepositoryTests.MapperTests.AutoMapperTests
 {
     [TestClass]
-    public class AdressMapperTests
+    public class ConsultationMapperTests
     {
         [TestMethod]
-        public void PassWhenAdressMapToBOSucess()
+        public void PassWhenConsultationMapToBOSucess()
         {
             // Arrange
             var target = getTarget();
@@ -29,7 +32,7 @@ namespace IndividualConsultationTool.Tests.RepositoryTests.MapperTests.AutoMappe
 
 
         [TestMethod]
-        public void PassWhenAdressMapToEntitySucess()
+        public void PassWhenConsultationMapToEntitySucess()
         {
             // Arrange
             var target = getTarget();
@@ -45,21 +48,21 @@ namespace IndividualConsultationTool.Tests.RepositoryTests.MapperTests.AutoMappe
         }
 
 
-        private IMapper<Adress, Repository.Entity.Adress> getTarget()
+        private IMapper<Consultation, Repository.Entity.Consultation> getTarget()
         {
-            return new AdressMapper();
+            return new ConsultationMapper();
         }
 
 
-        private Repository.Entity.Adress getEntity()
+        private Repository.Entity.Consultation getEntity()
         {
-            return new Repository.Entity.Adress();
+            return new Repository.Entity.Consultation();
         }
 
 
-        private Adress getModel()
+        private Consultation getModel()
         {
-            return  new Adress();
+            return new Consultation();
         }
     }
 }
