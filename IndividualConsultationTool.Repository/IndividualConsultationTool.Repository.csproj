@@ -82,7 +82,6 @@
     <Compile Include="Mappers\AutoMapper\ConsultationMapper.cs" />
     <Compile Include="Mappers\AutoMapper\ContactMapper.cs" />
     <Compile Include="Mappers\AutoMapper\DoctorMapper.cs" />
-    <Compile Include="Mappers\DoNotCommitThat.cs" />
     <Compile Include="Mappers\AutoMapper\FactureMapper.cs" />
     <Compile Include="Mappers\AutoMapper\PatientMapper.cs" />
     <Compile Include="Mappers\IMapper.cs" />
