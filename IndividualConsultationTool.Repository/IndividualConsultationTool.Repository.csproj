@@ -82,10 +82,19 @@
     <Compile Include="Mappers\AutoMapper\ConsultationMapper.cs" />
     <Compile Include="Mappers\AutoMapper\ContactMapper.cs" />
     <Compile Include="Mappers\AutoMapper\DoctorMapper.cs" />
+    <Compile Include="Mappers\DoNotCommitThat.cs" />
     <Compile Include="Mappers\AutoMapper\FactureMapper.cs" />
     <Compile Include="Mappers\AutoMapper\PatientMapper.cs" />
     <Compile Include="Mappers\IMapper.cs" />
     <Compile Include="Mappers\SecureServiceForMappers\AdressSecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\CabinetSecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\ConsultationChainSecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\ConsultationSecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\ContactSecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\DoctorSecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\FactureSecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\EntitySecureService.cs" />
+    <Compile Include="Mappers\SecureServiceForMappers\PatientSecureService.cs" />
     <Compile Include="Migrations\201609261844552_FirstMigration.cs" />
     <Compile Include="Migrations\201609261844552_FirstMigration.Designer.cs">
       <DependentUpon>201609261844552_FirstMigration.cs</DependentUpon>

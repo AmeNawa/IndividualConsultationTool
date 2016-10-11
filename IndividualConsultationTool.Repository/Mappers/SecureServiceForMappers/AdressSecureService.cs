@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using IndividualConsultationTool.Repository.Entity;
-using Ninject;
+﻿using Ninject;
 using IndividualConsultationTool.Common.Infrastructure;
 
 namespace IndividualConsultationTool.Repository.Mappers.SecureServiceForMappers
 {
-    public class AdressSecureService
+    public class AdressSecureService : EntitySecureService<Entity.Adress>
     {
         private Common.Secure.ICrypt AES;
 
@@ -24,7 +18,7 @@ namespace IndividualConsultationTool.Repository.Mappers.SecureServiceForMappers
         /// Decrypt most detailed information about adress (street and postal code)
         /// </summary>
         /// <param name="source"></param>
-        public void DecryptAdress(Entity.Adress source)
+        public void DecryptEntity(Entity.Adress source)
         {
             AES.Decrypt(source.Street);
             AES.Decrypt(source.PostalCode);
@@ -35,7 +29,7 @@ namespace IndividualConsultationTool.Repository.Mappers.SecureServiceForMappers
         /// Encrypt most detailed information about adress (street and postal code)
         /// </summary>
         /// <param name="source"></param>
-        public void EncryptAdress(Entity.Adress source)
+        public void EncryptEntity(Entity.Adress source)
         {
             AES.Encrypt(source.Street);
             AES.Encrypt(source.PostalCode);
